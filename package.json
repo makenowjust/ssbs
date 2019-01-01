@@ -8,7 +8,12 @@
   "license": "MIT",
   "devDependencies": {
     "@types/koa": "^2.0.48",
+    "@types/koa-send": "^4.1.1",
     "@zeit/ncc": "^0.8.1",
-    "koa": "^2.6.2"
+    "arg": "^4.0.1",
+    "chokidar": "^2.0.4",
+    "http-event-stream": "^0.2.0",
+    "koa": "^2.6.2",
+    "koa-send": "^5.0.0"
   }
 }
