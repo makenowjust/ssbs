@@ -7,6 +7,8 @@
   "author": "TSUYUSATO Kitsune <make.just.on@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@zeit/ncc": "^0.8.1"
+    "@types/koa": "^2.0.48",
+    "@zeit/ncc": "^0.8.1",
+    "koa": "^2.6.2"
   }
 }
