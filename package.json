@@ -1,0 +1,9 @@
+{
+  "name": "@makenowjust/ssbs",
+  "version": "0.0.0",
+  "description": "static serve + browser sync",
+  "main": "index.js",
+  "repository": "https://github.com/MakeNowJust/ssbs",
+  "author": "TSUYUSATO Kitsune <make.just.on@gmail.com>",
+  "license": "MIT"
+}
