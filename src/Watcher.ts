@@ -33,11 +33,8 @@ export class Watcher {
       this.watcher.once("error", reject);
     });
 
-    this.logger.info(
-      `watch ${chalk.underline(
-        path.relative(process.cwd(), this.opts.dir) || "."
-      )}`
-    );
+    const dir = path.relative(process.cwd(), this.opts.dir) || ".";
+    this.logger.info(`watch directory ${chalk.underline(dir)}`);
   }
 
   public watch(): Observable<FileUpdate> {
