@@ -5,9 +5,10 @@
   "author": "TSUYUSATO Kitsune <make.just.on@gmail.com>",
   "repository": "https://github.com/MakeNowJust/ssbs",
   "version": "1.0.0",
+  "main": "./src/main.ts",
   "bin": "./dist/index.js",
   "scripts": {
-    "build": "ncc build -e canvas src/main.ts && pkg -o ssbs -t node10-macos-x64 .",
+    "build": "ncc build -e jsdom -e node-pre-gyp -e nw-pre-gyp -e emitter . && pkg -o ssbs -t node10-macos-x64 .",
     "format": "prettier-package-json --write && prettier --ignore-path .gitignore --write **/*.{js,json,md,ts}",
     "lint": "prettier-package-json --list-different && prettier --ignore-path .gitignore --list-different **/*.{js,json,md,ts}"
   },
@@ -24,7 +25,6 @@
     "@types/serve-index": "^1.7.29",
     "@zeit/ncc": "^0.8.1",
     "arg": "^4.0.1",
-    "canvas": "^2.2.0",
     "chalk": "^2.4.1",
     "chokidar": "^2.0.4",
     "consola": "^2.3.2",
@@ -45,7 +45,13 @@
     "serve-index": "^1.9.1"
   },
   "pkg": {
-    "scripts": "dist/**/*.js",
-    "assets": "dist/*/**/*"
+    "scripts": [
+      "./dist/index.js"
+    ],
+    "assets": [
+      "./dist/xdg-open",
+      "./dist/serve-index/public/directory.html",
+      "./dist/serve-index/public/style.css"
+    ]
   }
 }
