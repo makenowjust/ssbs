@@ -9,9 +9,14 @@ import consola from "consola";
 import { bootstrap } from "./bootstrap";
 import { Application } from "./Application";
 
+import pkg from "../package.json";
+
 const spec = {
   "-h": "--help",
   "--help": Boolean,
+
+  "-v": "--version",
+  "--version": Boolean,
 
   "--host": String,
   "--port": Number,
@@ -37,6 +42,8 @@ const help = () => {
 
     -h, --help          Show this help
 
+    -h, --help          Show version
+
     --host {underline host}         Specify a hostname on which to listen
                         [{bold default:} {green 'localhost'}]
 
@@ -55,6 +62,11 @@ const main = async () => {
 
   if (options["--help"]) {
     help();
+    return;
+  }
+
+  if (options["--version"]) {
+    console.log(pkg.version);
     return;
   }
 

@@ -6,6 +6,7 @@
     "target": "es2017",
     "types": ["reflect-metadata"],
     "esModuleInterop": true,
+    "resolveJsonModule": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
   }
