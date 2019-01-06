@@ -17,7 +17,9 @@ const spec = {
   "--port": Number,
 
   "-d": "--delay",
-  "--delay": Number
+  "--delay": Number,
+
+  "--open": Boolean
 };
 
 const help = () => {
@@ -43,6 +45,8 @@ const help = () => {
 
     -d, --delay {underline ms}      Specify a delay time to reload
                         [{bold default:} {yellow 300}]
+
+    --open              Open a browser
   `);
 };
 
@@ -57,6 +61,7 @@ const main = async () => {
   const host = options["--host"] || "localhost";
   const port = options["--port"] || 4567;
   const delay = options["--delay"] || 300;
+  const open = options["--open"] || false;
 
   const dirs = options._;
   if (dirs.length === 0) {
@@ -69,7 +74,7 @@ const main = async () => {
   }
   const dir = path.resolve(process.cwd(), dirs[0]);
 
-  await bootstrap({ host, port, delay, dir }, Application);
+  await bootstrap({ host, port, delay, open, dir }, Application);
 };
 
 main().catch(err => {

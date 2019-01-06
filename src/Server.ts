@@ -7,10 +7,11 @@ import { injectable, inject } from "inversify";
 import { JSDOM } from "jsdom";
 import Koa from "koa";
 import logger from "koa-logger";
+import onFinished from "on-finished";
+import opn from "opn";
 import route from "koa-route";
 import send from "koa-send";
 import serveIndex from "serve-index";
-import onFinished from "on-finished";
 
 import { Logger, LoggerCreator } from "./Logger";
 import { Options } from "./Options";
@@ -69,11 +70,11 @@ export class Server {
       this.app.listen(this.opts.port, this.opts.host, resolve)
     );
 
-    this.logger.info(
-      `listen at ${chalk.underline(
-        `http://${this.opts.host}:${this.opts.port}`
-      )}`
-    );
+    const url = `http://${this.opts.host}:${this.opts.port}/`;
+    this.logger.info(`listen at ${chalk.underline(url)}`);
+    if (this.opts.open) {
+      await opn(url);
+    }
   }
 
   // Set up `this.app`.
@@ -83,10 +84,7 @@ export class Server {
     this.app.use(this.handlePath);
   }
 
-  private readonly handleWatch = async (
-    ctx: Koa.Context,
-    next: () => Promise<void>
-  ): Promise<void> => {
+  private readonly handleWatch = async (ctx: Koa.Context): Promise<void> => {
     ctx.respond = false;
     ctx.res.writeHead(200, {
       "Access-Control-Allow-Origin": "*",
