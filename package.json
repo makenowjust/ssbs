@@ -8,7 +8,7 @@
   "main": "./src/main.ts",
   "bin": "./dist/index.js",
   "scripts": {
-    "build": "ncc build -e jsdom -e node-pre-gyp -e nw-pre-gyp -e emitter . && pkg -o ssbs -t node10-macos-x64 .",
+    "build": "ncc build -e jsdom -e node-pre-gyp -e nw-pre-gyp -e emitter . && pkg -t node10-macos-x64,node10-linux-x64,node10-win-x64 --out-path out .",
     "format": "prettier-package-json --write && prettier --ignore-path .gitignore --write **/*.{js,json,md,ts}",
     "lint": "prettier-package-json --list-different && prettier --ignore-path .gitignore --list-different **/*.{js,json,md,ts}"
   },
