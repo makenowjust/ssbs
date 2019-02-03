@@ -3,7 +3,7 @@ import path from "path";
 import chalk from "chalk";
 import * as express from "express";
 import fs from "fs-extra";
-import { injectable, inject } from "inversify";
+import { injectable } from "inversify";
 import { JSDOM } from "jsdom";
 import Koa from "koa";
 import logger from "koa-logger";

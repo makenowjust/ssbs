@@ -2,7 +2,7 @@ import path from "path";
 
 import chokidar from "chokidar";
 import chalk from "chalk";
-import { injectable, inject } from "inversify";
+import { injectable } from "inversify";
 import { Observable } from "rxjs";
 
 import { Options } from "./Options";
