@@ -50,9 +50,9 @@
       "./dist/index.js"
     ],
     "assets": [
-      "./dist/xdg-open",
-      "./dist/serve-index/public/directory.html",
-      "./dist/serve-index/public/style.css"
+      "./dist/directory.html",
+      "./dist/style.css",
+      "./dist/xdg-open"
     ]
   }
 }
