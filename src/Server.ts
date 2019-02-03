@@ -13,7 +13,7 @@ import route from "koa-route";
 import send from "koa-send";
 import serveIndex from "serve-index";
 
-import { Logger, LoggerCreator } from "./Logger";
+import { Logger, LoggerFactory } from "./Logger";
 import { Options } from "./Options";
 import { Watcher } from "./Watcher";
 
@@ -55,9 +55,9 @@ export class Server {
   public readonly app: Koa;
   public readonly index: express.Handler;
 
-  constructor(loggerCreator: LoggerCreator, opts: Options, watcher: Watcher) {
+  constructor(loggerFactory: LoggerFactory, opts: Options, watcher: Watcher) {
     this.opts = opts;
-    this.logger = loggerCreator.create("server");
+    this.logger = loggerFactory.create("server");
     this.watcher = watcher;
 
     this.app = new Koa();

@@ -1,6 +1,6 @@
 import { injectable, inject } from "inversify";
 
-import { Logger, LoggerCreator } from "./Logger";
+import { Logger, LoggerFactory } from "./Logger";
 import { Options } from "./Options";
 import { Watcher } from "./Watcher";
 import { Server } from "./Server";
@@ -16,13 +16,13 @@ export class Application {
   public watcher: Watcher;
 
   constructor(
-    loggerCreator: LoggerCreator,
+    loggerFactory: LoggerFactory,
     opts: Options,
     server: Server,
     watcher: Watcher
   ) {
     this.opts = opts;
-    this.logger = loggerCreator.create("server");
+    this.logger = loggerFactory.create("server");
     this.server = server;
     this.watcher = watcher;
   }

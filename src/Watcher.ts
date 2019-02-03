@@ -6,7 +6,7 @@ import { injectable, inject } from "inversify";
 import { Observable } from "rxjs";
 
 import { Options } from "./Options";
-import { Logger, LoggerCreator } from "./Logger";
+import { Logger, LoggerFactory } from "./Logger";
 
 export interface FileUpdate {
   id: number;
@@ -21,8 +21,8 @@ export class Watcher {
 
   public readonly watcher!: chokidar.FSWatcher;
 
-  constructor(loggerCreator: LoggerCreator, opts: Options) {
-    this.logger = loggerCreator.create("watcher");
+  constructor(loggerFactory: LoggerFactory, opts: Options) {
+    this.logger = loggerFactory.create("watcher");
     this.opts = opts;
   }
 
