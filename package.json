@@ -43,7 +43,7 @@
     "reflect-metadata": "0.1.13",
     "rxjs": "6.4.0",
     "serve-index": "1.9.1",
-    "typescript": "3.4.2"
+    "typescript": "3.4.3"
   },
   "pkg": {
     "scripts": [
