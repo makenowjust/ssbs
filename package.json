@@ -37,7 +37,7 @@
     "koa-send": "5.0.0",
     "on-finished": "2.3.0",
     "opn": "5.5.0",
-    "pkg": "4.3.7",
+    "pkg": "4.3.8",
     "prettier": "1.17.0",
     "prettier-package-json": "2.1.0",
     "reflect-metadata": "0.1.13",
