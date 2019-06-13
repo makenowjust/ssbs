@@ -23,7 +23,7 @@
     "@types/on-finished": "2.3.1",
     "@types/opn": "5.1.0",
     "@types/serve-index": "1.7.29",
-    "@zeit/ncc": "0.19.0",
+    "@zeit/ncc": "0.19.1",
     "arg": "4.1.0",
     "chalk": "2.4.2",
     "chokidar": "3.0.1",
