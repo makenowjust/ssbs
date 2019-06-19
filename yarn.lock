@@ -218,10 +218,10 @@
   resolved "https://registry.yarnpkg.com/@types/tough-cookie/-/tough-cookie-2.3.4.tgz#821878b81bfab971b93a265a561d54ea61f9059f"
   integrity sha512-Set5ZdrAaKI/qHdFlVMgm/GsAv/wkXhSTuZFkJ+JI7HK+wIkIlOaUXSXieIvJ0+OvGIqtREFoE+NHJtEq0gtEw==
 
-"@zeit/ncc@0.20.0":
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/@zeit/ncc/-/ncc-0.20.0.tgz#1c3c934b7c191ea225d58b735b003760e796856e"
-  integrity sha512-tc7F3mYiJZgEsPPJJwNznWIeIEKrVxW6hvwAjpLabq8+hu3sm+YuR+59CLfAvA26+yHBrVcYnsxZ6XW1g/oRmg==
+"@zeit/ncc@0.20.1":
+  version "0.20.1"
+  resolved "https://registry.yarnpkg.com/@zeit/ncc/-/ncc-0.20.1.tgz#1e282f23a171b11f5b65d3281fad7b9195cbab66"
+  integrity sha512-sCSWftZlFR2VgbjdMq+/TPXU7fDJpsjxGcDU1Nh2b/Gemvna8Ncl77ck+6WeEhcx/Gwtv4AeR3xJ1upgk7MSnQ==
 
 abab@^2.0.0:
   version "2.0.0"
