@@ -24,7 +24,7 @@
     "@types/opn": "5.1.0",
     "@types/serve-index": "1.7.29",
     "@zeit/ncc": "0.20.4",
-    "arg": "4.1.0",
+    "arg": "4.1.1",
     "chalk": "2.4.2",
     "chokidar": "3.0.2",
     "consola": "2.9.0",
