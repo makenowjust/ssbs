@@ -41,7 +41,7 @@
     "prettier": "1.18.2",
     "prettier-package-json": "2.1.0",
     "reflect-metadata": "0.1.13",
-    "rxjs": "6.5.2",
+    "rxjs": "6.5.3",
     "serve-index": "1.9.1",
     "typescript": "3.6.2"
   },
