@@ -16,7 +16,7 @@
     "@types/chokidar": "1.7.5",
     "@types/fs-extra": "8.0.0",
     "@types/jsdom": "12.2.4",
-    "@types/koa": "2.0.50",
+    "@types/koa": "2.0.51",
     "@types/koa-logger": "3.1.1",
     "@types/koa-route": "3.2.4",
     "@types/koa-send": "4.1.2",
