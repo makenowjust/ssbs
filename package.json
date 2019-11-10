@@ -27,7 +27,7 @@
     "arg": "4.1.1",
     "chalk": "3.0.0",
     "chokidar": "3.3.0",
-    "consola": "2.10.1",
+    "consola": "2.11.0",
     "fs-extra": "8.1.0",
     "inversify": "5.0.1",
     "jsdom": "15.2.1",
