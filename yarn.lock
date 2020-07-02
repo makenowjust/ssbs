@@ -218,10 +218,10 @@
   resolved "https://registry.yarnpkg.com/@types/range-parser/-/range-parser-1.2.3.tgz#7ee330ba7caafb98090bece86a5ee44115904c2c"
   integrity sha512-ewFXqrQHlFsgc09MK5jP5iR7vumV/BYayNC6PgJO2LPe8vrnNFyjQjSppfEngITi0qvfKtzFvgKymGheFM9UOA==
 
-"@types/serve-index@1.7.29":
-  version "1.7.29"
-  resolved "https://registry.yarnpkg.com/@types/serve-index/-/serve-index-1.7.29.tgz#21def329735a690dad5e49c74a2623dfb0010740"
-  integrity sha512-oHSCX4wzPLWTUjj8LQNilJVL890kAQGpeE/gVbMzx2+/iE+Xb5khB2xQUFd8+K7lKz7DFB+e+e8OqiBISnVfJg==
+"@types/serve-index@1.7.30":
+  version "1.7.30"
+  resolved "https://registry.yarnpkg.com/@types/serve-index/-/serve-index-1.7.30.tgz#96cdcfe035ca436247dec3c6e11efb33c6c66165"
+  integrity sha512-OYa3mE+/dxZ2bdaPkcBzPBByDH6P3mzGXFmiH/RjIUIbDKppjJFs0t2FIw9Fr1KheJDOyrd84iQd8BJtxVqyUA==
   dependencies:
     "@types/express" "*"
 
