@@ -127,10 +127,10 @@
   resolved "https://registry.yarnpkg.com/@types/http-errors/-/http-errors-1.8.0.tgz#682477dbbbd07cd032731cb3b0e7eaee3d026b69"
   integrity sha512-2aoSC4UUbHDj2uCsCxcG/vRMXey/m17bC7UwitVm5hn22nI8O8Y9iDpA76Orc+DWkQ4zZrOKEshCqR/jSuXAHA==
 
-"@types/jsdom@16.2.8":
-  version "16.2.8"
-  resolved "https://registry.yarnpkg.com/@types/jsdom/-/jsdom-16.2.8.tgz#f2f06d64ccc9c3773669a26257155504bb0ebf69"
-  integrity sha512-s+Ll9m1ZYrIPzXSXUeN/j+0hGjTXD4+ecKB+xBAv2fdvEuRSv5VQJz80+Uth+V9lKvZG1fV+C23EfQpDHaRXMg==
+"@types/jsdom@16.2.9":
+  version "16.2.9"
+  resolved "https://registry.yarnpkg.com/@types/jsdom/-/jsdom-16.2.9.tgz#9c219e5c387f045aae8b80ae4d4cf61d098c15eb"
+  integrity sha512-7+HFvB7RIrU4KGazrn0/K81yjdg1hpwshM+nbt7CNlbwN1TUq5sBFMCfVglBYYv29l6ZTmXXFEB2FnxLv5gDcg==
   dependencies:
     "@types/node" "*"
     "@types/parse5" "*"
