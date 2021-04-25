@@ -1174,10 +1174,10 @@ into-stream@^6.0.0:
     from2 "^2.3.0"
     p-is-promise "^3.0.0"
 
-inversify@5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/inversify/-/inversify-5.1.0.tgz#35f4bffb9eab3be659e74eca671b6b6c916f986c"
-  integrity sha512-1PI0t8uaK26vzMq5j8QOxQz7YQJD/prmdp2bEbz58XfR7QXaRLV9fYNfALttGHwY5tcbS2xWJlcnsLrKjX33ew==
+inversify@5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/inversify/-/inversify-5.1.1.tgz#6fbd668c591337404e005a1946bfe0d802c08730"
+  integrity sha512-j8grHGDzv1v+8T1sAQ+3boTCntFPfvxLCkNcxB1J8qA0lUN+fAlSyYd+RXKvaPRL4AGyPxViutBEJHNXOyUdFQ==
 
 is-binary-path@~2.1.0:
   version "2.1.0"
