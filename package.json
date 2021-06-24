@@ -22,7 +22,7 @@
     "@types/koa-send": "4.1.2",
     "@types/on-finished": "2.3.1",
     "@types/opn": "5.1.0",
-    "@types/serve-index": "1.7.30",
+    "@types/serve-index": "1.9.0",
     "@zeit/ncc": "0.22.3",
     "arg": "5.0.0",
     "chalk": "4.1.1",
